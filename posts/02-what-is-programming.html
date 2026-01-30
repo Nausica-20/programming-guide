@@ -1,1 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="What Is Programming? - Understanding the fundamentals of how programming works">
+    <title>What Is Programming? | Programming Guide</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>What Is Programming?</h1>
+        <p>Understanding the fundamentals of how code works</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="01-introduction-to-coding.html">← Previous</a></li>
+            <li><a href="03-programming-languages-explained.html">Next →</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <article>
+            <h1>What Is Programming?</h1>
+            
+            <h2>Defining Programming</h2>
+            <p>Programming is the art and science of creating software by writing code that instructs computers to perform specific tasks. At its core, programming is about solving problems using logical thinking and translating those solutions into a language that computers can understand and execute.</p>
+            
+            <p>While the previous article introduced coding as a concept, this article dives deeper into what programming actually involves, how it works, and the fundamental principles that all programmers need to understand.</p>
+
+            <p>Think of programming as teaching—but instead of teaching a person, you're teaching a computer. The computer is an incredibly fast but extremely literal student. It will do exactly what you tell it to do, nothing more and nothing less. This is both the power and the challenge of programming.</p>
+
+            <h2>How Computers Think (Spoiler: They Don't)</h2>
+            <p>Before we dive deeper into programming, it's essential to understand that computers don't actually "think" in the way humans do. They don't understand meaning or context. They simply execute instructions with incredible speed and precision.</p>
+
+            <h3>The Computer's Perspective</h3>
+            <p>Imagine you're giving directions to someone who has never left their house and knows absolutely nothing about the outside world. You can't say "go to the store." You need to say:</p>
+            
+            <ul>
+                <li>Open the front door</li>
+                <li>Step outside</li>
+                <li>Turn left</li>
+                <li>Walk forward 10 steps</li>
+                <li>Turn right</li>
+                <li>Walk forward 20 steps</li>
+                <li>And so on...</li>
+            </ul>
+
+            <p>This is exactly how specific you need to be when programming. Computers require explicit, detailed instructions for every single step of a process.</p>
+
+            <h2>How Computers Understand Instructions</h2>
+            <p>Computers are incredibly powerful machines, but they're not intelligent in the way humans are. They can only do exactly what they're told to do, nothing more and nothing less. Here's how the process works:</p>
+
+            <h3>Binary: The Computer's Language</h3>
+            <p>At the lowest level, computers operate using binary code—sequences of 1s and 0s that represent electrical signals (on or off). Every piece of data, every instruction, and every program is ultimately converted into binary that the computer's processor can execute.</p>
+
+            <p>For example, the letter 'A' in ASCII binary is represented as: 01000001. The number 42 is: 00101010. Everything in a computer—text, images, videos, programs—is ultimately just patterns of 1s and 0s.</p>
+
+            <h3>From High-Level to Low-Level</h3>
+            <p>Fortunately, programmers don't have to write in binary. We use high-level programming languages (like Python, JavaScript, or Java) that are much more human-readable. These languages are then translated into machine code through processes called compilation or interpretation.</p>
+
+            <p><strong>Compiled languages</strong> (like C, C++, Rust) are translated entirely into machine code before running. This makes them very fast but requires a separate compilation step.</p>
+
+            <p><strong>Interpreted languages</strong> (like Python, JavaScript) are translated line-by-line as they run. This makes development faster and more flexible, but execution can be slower.</p>
+
+            <h2>The Anatomy of a Program</h2>
+            <p>Every program, no matter how complex, is built from the same basic building blocks. Understanding these components is crucial to understanding programming itself.</p>
+
+            <h3>1. Input</h3>
+            <p>Programs need data to work with. This input can come from many sources:</p>
+            <ul>
+                <li>User keyboard input or mouse clicks</li>
+                <li>Files stored on disk</li>
+                <li>Data from the internet (APIs)</li>
+                <li>Sensors (temperature, GPS, camera)</li>
+                <li>Database queries</li>
+            </ul>
+
+            <h3>2. Processing</h3>
+            <p>This is where the actual "work" happens. The program takes the input and manipulates it according to its instructions. This might involve:</p>
+            <ul>
+                <li>Mathematical calculations</li>
+                <li>Sorting and filtering data</li>
+                <li>Making decisions based on conditions</li>
+                <li>Transforming data from one format to another</li>
+                <li>Comparing values</li>
+            </ul>
+
+            <h3>3. Output</h3>
+            <p>After processing, the program produces results:</p>
+            <ul>
+                <li>Displaying information on screen</li>
+                <li>Saving data to files</li>
+                <li>Sending data over the network</li>
+                <li>Controlling hardware (turning on a light, playing sound)</li>
+                <li>Updating a database</li>
+            </ul>
+
+            <p>Every program follows this pattern: Input → Process → Output. Even the most complex applications are just sophisticated combinations of these three steps.</p>
+
+            <h2>The Three Core Concepts of Programming</h2>
+            <p>Regardless of which programming language you choose to learn, all programming is built on three fundamental concepts. Master these, and you can learn any programming language.</p>
+
+            <h3>1. Sequence</h3>
+            <p>Sequence refers to the order in which instructions are executed. Computers execute code line by line, from top to bottom (unless instructed otherwise). The sequence of operations matters greatly—putting steps in the wrong order will produce incorrect results.</p>
+
+            <p>Think of making a sandwich. The sequence matters:</p>
+            <pre><code>// Correct sequence
+getSliceOfBread()
+spreadPeanutButter()
+spreadJelly()
+putSecondSliceOnTop()
+
+// Wrong sequence - this won't work!
+putSecondSliceOnTop()
+spreadPeanutButter()
+getSliceOfBread()
+spreadJelly()</code></pre>
+
+            <h3>2. Selection (Conditional Logic)</h3>
+            <p>Selection allows programs to make decisions based on conditions. Using if-else statements, programs can choose different paths of execution depending on certain criteria. This is what makes software intelligent and responsive.</p>
+
+            <pre><code>if (user is logged in) {
+    show dashboard
+} else {
+    show login page
+}
+
+if (temperature > 30) {
+    print("It's hot outside!")
+} else if (temperature > 20) {
+    print("It's pleasant!")
+} else {
+    print("It's cold!")
+}</code></pre>
+
+            <p>Real-world applications make thousands of decisions per second based on various conditions. When you click "like" on a post, the application checks: Are you logged in? Have you already liked this? Is the post still available? Each check is a conditional statement.</p>
+
+            <h3>3. Iteration (Loops)</h3>
+            <p>Iteration enables programs to repeat actions multiple times without writing the same code over and over. Loops are essential for processing lists of data, performing calculations, and automating repetitive tasks.</p>
+
+            <pre><code>// Process each item in shopping cart
+for each item in shopping cart {
+    calculate price
+    add to total
+    check inventory
+}
+
+// Keep asking until valid input
+while (input is not valid) {
+    ask user for input
+    validate input
+}</code></pre>
+
+            <p>Imagine sending 1000 emails. Without loops, you'd need to write the same code 1000 times. With a loop, you write it once and let the computer repeat it.</p>
+
+            <h2>Key Programming Concepts</h2>
+
+            <h3>Variables: Containers for Data</h3>
+            <p>Variables are containers that store data. Think of them as labeled boxes where you can put information and retrieve it later. Variables can hold different types of data: numbers, text, true/false values, and more complex structures.</p>
+
+            <pre><code>userName = "Alice"
+userAge = 25
+isLoggedIn = true
+accountBalance = 1500.75</code></pre>
+
+            <p>Variables are fundamental because they allow programs to work with data that changes. The username varies from person to person. The account balance changes with transactions. Variables adapt to these changes.</p>
+
+            <h4>Naming Variables</h4>
+            <p>Good variable names are crucial for readable code:</p>
+            <ul>
+                <li><strong>Good:</strong> userName, totalPrice, isValid</li>
+                <li><strong>Bad:</strong> x, data, thing, asdf</li>
+            </ul>
+
+            <p>Your variable names should clearly indicate what they store. Future you (and other programmers) will thank you.</p>
+
+            <h3>Data Types: Categories of Information</h3>
+            <p>Different kinds of data require different types of storage and handling. Understanding data types is crucial for writing effective programs.</p>
+
+            <h4>Primitive Data Types</h4>
+            <ul>
+                <li><strong>Strings:</strong> Text data ("Hello, World!", "alice@email.com")</li>
+                <li><strong>Integers:</strong> Whole numbers (42, -17, 1000)</li>
+                <li><strong>Floats/Decimals:</strong> Numbers with decimal points (3.14, -0.5, 99.99)</li>
+                <li><strong>Booleans:</strong> True or false values (isLoggedIn, hasPermission)</li>
+            </ul>
+
+            <h4>Complex Data Types</h4>
+            <ul>
+                <li><strong>Arrays/Lists:</strong> Ordered collections of items [1, 2, 3, 4, 5] or ["apple", "banana", "orange"]</li>
+                <li><strong>Objects/Dictionaries:</strong> Key-value pairs {name: "Alice", age: 25, city: "New York"}</li>
+                <li><strong>Null/None:</strong> Represents "no value" or "nothing"</li>
+            </ul>
+
+            <p>Different operations work with different data types. You can add numbers, but you can't meaningfully add "hello" + true. Understanding data types prevents errors and helps you choose the right tool for each task.</p>
+
+            <h3>Functions: Reusable Blocks of Code</h3>
+            <p>Functions are reusable blocks of code that perform specific tasks. They help organize code, reduce repetition, and make programs more maintainable. Think of functions as recipes—you define the steps once, then you can follow that recipe whenever you need it.</p>
+
+            <pre><code>function calculateTotal(price, quantity) {
+    const subtotal = price * quantity
+    const tax = subtotal * 0.1
+    const total = subtotal + tax
+    return total
+}
+
+// Use the function
+const orderTotal = calculateTotal(10, 5)  // Returns 55
+const anotherOrder = calculateTotal(20, 3)  // Returns 66</code></pre>
+
+            <h4>Why Functions Matter</h4>
+            <ul>
+                <li><strong>Reusability:</strong> Write once, use many times</li>
+                <li><strong>Organization:</strong> Break complex problems into smaller pieces</li>
+                <li><strong>Maintainability:</strong> Fix bugs in one place instead of many</li>
+                <li><strong>Abstraction:</strong> Hide complex details behind simple interfaces</li>
+                <li><strong>Testing:</strong> Easier to test small, focused functions</li>
+            </ul>
+
+            <h3>Operators: Symbols That Perform Operations</h3>
+            <p>Operators perform operations on data. They're the verbs of programming languages.</p>
+
+            <h4>Arithmetic Operators</h4>
+            <pre><code>addition = 5 + 3        // 8
+subtraction = 10 - 4    // 6
+multiplication = 6 * 7  // 42
+division = 20 / 4       // 5
+modulus = 17 % 5        // 2 (remainder)
+exponent = 2 ** 3       // 8 (2 to the power of 3)</code></pre>
+
+            <h4>Comparison Operators</h4>
+            <pre><code>equal = (5 == 5)           // true
+notEqual = (5 != 3)        // true
+greaterThan = (10 > 5)     // true
+lessThan = (3 < 7)         // true
+greaterOrEqual = (5 >= 5)  // true
+lessOrEqual = (4 <= 9)     // true</code></pre>
+
+            <h4>Logical Operators</h4>
+            <pre><code>AND = (true && true)    // true (both must be true)
+OR = (true || false)    // true (at least one must be true)
+NOT = !true             // false (inverts the value)</code></pre>
+
+            <h2>The Programming Workflow</h2>
+            <p>Professional programming follows a systematic approach. This workflow helps ensure you build reliable, maintainable software.</p>
+
+            <h3>1. Understanding the Problem</h3>
+            <p>Before writing any code, clearly define what you're trying to accomplish. Ask yourself:</p>
+            <ul>
+                <li>What problem am I solving?</li>
+                <li>What are the inputs?</li>
+                <li>What should the output be?</li>
+                <li>What are the constraints and requirements?</li>
+                <li>What edge cases should I consider?</li>
+            </ul>
+
+            <p>Many beginners rush to code without fully understanding the problem. Taking time to think through requirements saves hours of debugging later.</p>
+
+            <h3>2. Planning the Solution</h3>
+            <p>Break down the problem into smaller, manageable steps. Use pseudocode (plain English descriptions of your logic) or flowcharts to plan your approach.</p>
+
+            <p>Example pseudocode for a login system:</p>
+            <pre><code>GET username and password from user
+LOOK UP user in database
+IF user exists THEN
+    IF password matches THEN
+        GRANT access
+        REDIRECT to dashboard
+    ELSE
+        SHOW error "Invalid password"
+    END IF
+ELSE
+    SHOW error "User not found"
+END IF</code></pre>
+
+            <h3>3. Writing the Code</h3>
+            <p>Translate your plan into actual code using your chosen programming language. Start simple and build incrementally. Don't try to write the entire program at once—build it piece by piece, testing as you go.</p>
+
+            <h3>4. Testing</h3>
+            <p>Run your code with various inputs to ensure it works correctly. Test edge cases and unusual scenarios:</p>
+            <ul>
+                <li>Empty inputs</li>
+                <li>Very large numbers</li>
+                <li>Negative numbers where only positive expected</li>
+                <li>Special characters in text input</li>
+                <li>Unexpected data types</li>
+            </ul>
+
+            <h3>5. Debugging</h3>
+            <p>When errors occur (and they will), use debugging tools and techniques to identify and fix them. Debugging is a normal and essential part of programming. Professional developers spend significant time debugging—it's not a sign of failure, it's part of the process.</p>
+
+            <h4>Common Debugging Techniques:</h4>
+            <ul>
+                <li><strong>Print statements:</strong> Display variable values to see what's happening</li>
+                <li><strong>Debuggers:</strong> Step through code line by line</li>
+                <li><strong>Error messages:</strong> Read them carefully—they often tell you exactly what's wrong</li>
+                <li><strong>Rubber duck debugging:</strong> Explain your code out loud to find the issue</li>
+            </ul>
+
+            <h3>6. Refactoring</h3>
+            <p>Once your code works, look for ways to improve it. Can you make it more efficient? More readable? More maintainable? Refactoring is the process of restructuring code without changing its behavior.</p>
+
+            <h2>Algorithms: The Heart of Programming</h2>
+            <p>An algorithm is a step-by-step procedure for solving a problem. Every program is essentially an implementation of one or more algorithms. Understanding algorithms is key to becoming a strong programmer.</p>
+
+            <h3>Characteristics of Good Algorithms</h3>
+            <ul>
+                <li><strong>Correct:</strong> Produces the right output for all valid inputs</li>
+                <li><strong>Efficient:</strong> Uses computational resources (time and memory) wisely</li>
+                <li><strong>Clear:</strong> Easy to understand and maintain</li>
+                <li><strong>General:</strong> Works for a wide range of cases</li>
+                <li><strong>Finite:</strong> Terminates after a finite number of steps</li>
+            </ul>
+
+            <h3>Real-World Algorithm Example: Making Toast</h3>
+            <pre><code>1. Check if bread is available
+   - If no bread, go to store
+2. Take bread slice
+3. Check if toaster is plugged in
+   - If not, plug it in
+4. Put bread in toaster
+5. Set timer to desired darkness
+6. Push lever down
+7. Wait for toast to pop up
+8. Remove toast carefully
+9. Apply butter if desired
+10. Serve</code></pre>
+
+            <p>This simple algorithm shows all the key elements: sequence, decisions, and clear steps. Programming algorithms work the same way, just with more complex operations.</p>
+
+            <h2>Programming Paradigms</h2>
+            <p>Different programming paradigms represent different approaches to structuring code. Most modern languages support multiple paradigms.</p>
+
+            <h3>Procedural Programming</h3>
+            <p>Organizes code as a sequence of procedures or functions. This is often the first paradigm beginners learn. Code flows from top to bottom, calling functions as needed.</p>
+
+            <p><strong>Example languages:</strong> C, Pascal, early BASIC</p>
+
+            <h3>Object-Oriented Programming (OOP)</h3>
+            <p>Organizes code around objects that contain both data (properties) and the functions (methods) that operate on that data. Think of objects as digital representations of real-world things.</p>
+
+            <pre><code>class Car {
+    properties: color, model, speed
+    methods: accelerate(), brake(), honk()
+}
+
+myCar = new Car()
+myCar.color = "red"
+myCar.accelerate()</code></pre>
+
+            <p><strong>Example languages:</strong> Java, Python, C++, C#</p>
+
+            <h3>Functional Programming</h3>
+            <p>Emphasizes the use of pure functions that don't modify external state. Data is immutable, and functions always return the same output for the same input.</p>
+
+            <p><strong>Example languages:</strong> Haskell, Lisp, (JavaScript and Python support functional programming)</p>
+
+            <h2>The Importance of Logic and Problem-Solving</h2>
+            <p>Programming is fundamentally about problem-solving. The syntax of a programming language is just a tool—what matters most is your ability to think logically and break down complex problems into simple steps.</p>
+
+            <h3>Developing Computational Thinking</h3>
+            <p>Computational thinking is a problem-solving process that includes:</p>
+
+            <h4>1. Decomposition</h4>
+            <p>Breaking large problems into smaller, manageable sub-problems. Building a social media app seems overwhelming, but break it down: user registration, login, post creation, feed display, likes, comments—each is a smaller problem you can tackle.</p>
+
+            <h4>2. Pattern Recognition</h4>
+            <p>Identifying similarities between problems. Once you've learned to sort a list of numbers, you can apply similar logic to sort names, dates, or any other data.</p>
+
+            <h4>3. Abstraction</h4>
+            <p>Focusing on important information while filtering out unnecessary details. When using a car, you don't need to understand the engine's internals—you just need to know: accelerator = go, brake = stop.</p>
+
+            <h4>4. Algorithm Design</h4>
+            <p>Creating step-by-step solutions. This becomes easier with practice as you build a mental library of common algorithms and approaches.</p>
+
+            <h2>Writing Good Code</h2>
+            <p>As you progress in programming, you'll learn that writing code that works is just the beginning. Good code is also:</p>
+
+            <h3>Readable</h3>
+            <p>Other programmers (including your future self) should be able to understand it easily. Use clear variable names, add comments for complex logic, and follow consistent formatting.</p>
+
+            <pre><code>// Bad
+function x(a,b){return a*b*0.1;}
+
+// Good
+function calculateSalesTax(price, quantity) {
+    const subtotal = price * quantity;
+    const taxRate = 0.1;
+    return subtotal * taxRate;
+}</code></pre>
+
+            <h3>Maintainable</h3>
+            <p>Code should be easy to modify and extend. Avoid overly complex solutions. Keep functions focused on single tasks. Use descriptive names.</p>
+
+            <h3>Efficient</h3>
+            <p>Use computational resources appropriately. Don't optimize prematurely, but avoid obviously wasteful operations. An algorithm that takes 10 seconds is fine; one that takes 10 hours needs improvement.</p>
+
+            <h3>Reliable</h3>
+            <p>Handle errors gracefully. Validate inputs. Think about edge cases. What happens if a user enters a negative number when you expect positive? Or leaves a field blank?</p>
+
+            <h3>Documented</h3>
+            <p>Include comments explaining WHY you did something, not just WHAT. The code shows what; comments explain the reasoning.</p>
+
+            <pre><code>// Bad comment
+// Multiply by 1.1
+price = price * 1.1
+
+// Good comment
+// Add 10% processing fee required by payment gateway
+price = price * 1.1</code></pre>
+
+            <h2>Learning Resources for Programming Fundamentals</h2>
+            
+            <h3>Free Online Courses</h3>
+            <p>To deepen your understanding of programming fundamentals, check out these excellent free resources:</p>
+
+            <ul>
+                <li><strong><a href="https://alison.com/course/introduction-to-programming-concepts" target="_blank" rel="noopener noreferrer" style="color: #667eea; text-decoration: underline;">Alison's Introduction to Programming Concepts</a></strong> - Comprehensive free course covering all the fundamentals discussed in this article</li>
+                <li><strong>CS50x (Harvard)</strong> - One of the best introductions to computer science</li>
+                <li><strong>freeCodeCamp</strong> - Hands-on practice with immediate feedback</li>
+                <li><strong>Codecademy</strong> - Interactive lessons in various languages</li>
+            </ul>
+
+            <h3>Books for Beginners</h3>
+            <ul>
+                <li>"Think Like a Programmer" by V. Anton Spraul</li>
+                <li>"Code: The Hidden Language of Computer Hardware and Software" by Charles Petzold</li>
+                <li>"The Self-Taught Programmer" by Cory Althoff</li>
+            </ul>
+
+            <h2>Practice Makes Perfect</h2>
+            <p>Reading about programming is valuable, but the only way to truly learn is by doing. Here are some beginner-friendly practice exercises:</p>
+
+            <h3>Exercise 1: Temperature Converter</h3>
+            <p>Write a program that converts temperatures between Celsius and Fahrenheit. This practices: input/output, variables, arithmetic operations, and functions.</p>
+
+            <h3>Exercise 2: Number Guessing Game</h3>
+            <p>Create a game where the computer picks a random number and the user has to guess it. This practices: random numbers, loops, conditionals, and user input.</p>
+
+            <h3>Exercise 3: Simple Calculator</h3>
+            <p>Build a calculator that can add, subtract, multiply, and divide. This practices: functions, conditionals, and user interface design.</p>
+
+            <h3>Exercise 4: To-Do List</h3>
+            <p>Create a program that lets users add, view, and remove tasks. This practices: lists/arrays, user input, and basic data management.</p>
+
+            <h2>Common Questions and Answers</h2>
+
+            <h3>Q: Do I need to be good at math to program?</h3>
+            <p>A: Not necessarily. While certain fields (game development, data science) use more math, most everyday programming requires only basic arithmetic. Logic and problem-solving matter more than mathematical prowess.</p>
+
+            <h3>Q: How long does it take to learn programming?</h3>
+            <p>A: You can understand basics in a few weeks. Building proficiency takes 3-6 months of consistent practice. Mastery is a lifelong journey—even expert programmers continually learn.</p>
+
+            <h3>Q: What's the best first programming language?</h3>
+            <p>A: Python is often recommended for beginners due to its readable syntax. JavaScript is great if you're interested in web development. The fundamentals transfer between languages, so don't overthink this choice.</p>
+
+            <h3>Q: Is programming hard?</h3>
+            <p>A: It's challenging but learnable. Like any skill, it requires practice and patience. The initial learning curve can be steep, but it gets easier as concepts click into place.</p>
+
+            <h2>Conclusion</h2>
+            <p>Programming is both an art and a science. It requires logical thinking, creativity, attention to detail, and persistence. While the concepts might seem abstract at first, they become clearer with practice and application.</p>
+
+            <p>The fundamental concepts covered in this article—sequence, selection, iteration, variables, functions, and data types—are the building blocks of all programs. Master these, and you'll have the foundation to learn any programming language or tackle any coding challenge.</p>
+
+            <p>Remember: every expert programmer started exactly where you are now. The difference is they kept practicing, kept learning, and kept building. Errors are learning opportunities. Confusion is temporary. Progress is inevitable with consistent effort.</p>
+
+            <p>In the next article, we'll explore the different programming languages available, their characteristics, and how to choose which one to learn first based on your goals and interests.</p>
+
+            <p><strong>Your Next Steps:</strong></p>
+            <ol>
+                <li>Choose a programming language (Python recommended for beginners)</li>
+                <li>Install the necessary software on your computer</li>
+                <li>Write and run your first "Hello, World!" program</li>
+                <li>Complete one of the practice exercises mentioned above</li>
+                <li>Join an online community to ask questions and share progress</li>
+            </ol>
+
+            <p>Download additional learning materials from <a href="https://alison.com/courses/programming" target="_blank" rel="noopener noreferrer" style="color: #667eea; text-decoration: underline;">Alison's free programming resources</a> to supplement your learning journey.</p>
+
+            <a href="01-introduction-to-coding.html" class="back-link">← Previous: Introduction to Coding</a>
+            <a href="03-programming-languages-explained.html" class="back-link" style="float: right;">Next: Programming Languages Explained →</a>
+        </article>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Programming & Computer Science Guide. All rights reserved.</p>
+    </footer>
+</body>
+</html>
 
